@@ -1,8 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React from "react";
-import Header from "./components/Header.js";
-import Footer from "./components/Footer";
+import Header from './components/header.js'
 
 function App() {
   return (
@@ -11,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Home
+          Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -22,10 +20,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <body>
-        <h1>yjytim.com</h1>
-      </body>
-      <Footer/>
     </div>
   );
 }
