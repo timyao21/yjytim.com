@@ -2,7 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
 // css
-import './css/header.css';
+import './css/headerFooter.css';
 import './css/style.css';
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -20,23 +20,26 @@ function BasicExample() {
                 src={logoImage}
                 className="d-inline-block align-top-right logoImage"
                 />{' '}
-                <p class="d-inline-block align-text-top" style={{ fontSize: "1.4rem" }}>Junyu (Tim) Yao</p>
+                <p class="d-inline-block align-text-top" style={{ fontSize: "1.4rem" }}>Junyu Yao</p>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
                     <Nav.Link href="#home" className="navbarButton">Home</Nav.Link>
-                    <Nav.Link href="#link" className="navbarButton">Projects</Nav.Link>
+                    <Nav.Link href="#link" className="navbarButton">Work</Nav.Link>
                     <Nav.Link href="#link1" className="navbarButton">Others</Nav.Link>
                     <NavDropdown title="" id="basic-nav-dropdown" className="navbarButton">
-                        <NavDropdown.Item href="#action/3.1">
+                        <NavDropdown.Item 
+                            href="https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ" 
+                            target="_blank"
+                            >
                             <FontAwesomeIcon icon={ faYoutube } className="socialMLogo"/> YouTube
                         </NavDropdown.Item>
                         <NavDropdown.Item href="#action/3.4">
-                        <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/> Photography
+                            <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/> Photography
                         </NavDropdown.Item>                        
                         <NavDropdown.Item href="#action/3.2">
-                            Bilibili
+                           Bilibili
                         </NavDropdown.Item>
 
                         <NavDropdown.Divider />
