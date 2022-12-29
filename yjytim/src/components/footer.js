@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Row, Col, Container, Nav, NavDropdown} from 'react-bootstrap';
 // css
 import './css/headerFooter.css';
-import './css/style.css';
+import '../css/style.css';
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
@@ -12,7 +12,7 @@ import logoImage from '../image/logoImage.png'
 
 function BasicExample() {
   return (
-    <div className="backgroundcolor1">
+    <div className="backgroundcolor1 text-center">
         <Container>
             <Row>
                 <Col xs={12} md={{ span: 4,order: 'second'}}>

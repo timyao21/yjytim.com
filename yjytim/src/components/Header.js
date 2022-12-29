@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
 // css
 import './css/headerFooter.css';
-import './css/style.css';
+import '../css/style.css';
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, } from "@fortawesome/free-brands-svg-icons"
@@ -12,7 +12,7 @@ import logoImage from '../image/logoImage.png'
 
 function BasicExample() {
   return (
-    <Navbar className="backgroundcolor1" variant="dark" fixed="top" expand="lg">
+    <Navbar className="backgroundcolor1 PoppinsFont" variant="dark" fixed="top" expand="lg">
         <Container>
             <Navbar.Brand href="#home">
                 <img

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Sacramento&display=swap');
+.backgroundcolor1{
+    background-color: #232323;
+    color: #99A8B2;
+}
+.textColor1{
+    color: #99A8B2;
+}
+.textColor2{
+    color: #D2FAFB;
+}
+.SacramentoFont{
+    font-family: 'Sacramento', cursive;
+}
+.PoppinsFont{
+    font-family: 'Poppins', sans-serif;
+}

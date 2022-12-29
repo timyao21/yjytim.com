@@ -1,0 +1,32 @@
+.body {
+  /* text-align: center; */
+}
+
+.firstContainer{
+  height: 100vh;
+  min-height: 320px;
+}
+
+.titleContainer{
+
+}
+
+.title{
+  margin-bottom: 8vh;
+}
+
+.profileContainer{
+  height: 90vh;
+  min-height: 800px;
+  /* margin-top: 7vh;
+  margin-bottom: 12vh; */
+}
+
+.profileImage{
+  width: 80%;
+  margin: 10%;
+}
+
+.programmerContainer{
+  height: 100vh;
+}
