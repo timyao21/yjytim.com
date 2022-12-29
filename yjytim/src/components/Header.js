@@ -20,15 +20,15 @@ function BasicExample() {
                 src={logoImage}
                 className="d-inline-block align-top-right logoImage"
                 />{' '}
-                <p class="d-inline-block align-text-top" style={{ fontSize: "1.4rem" }}>Junyu Yao</p>
+                <p class="d-inline-block align-text-top textColor1" style={{ fontSize: "1.4rem" }}>Junyu Yao</p>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#home" className="navbarButton">Home</Nav.Link>
-                    <Nav.Link href="#link" className="navbarButton">Work</Nav.Link>
-                    <Nav.Link href="#link1" className="navbarButton">Others</Nav.Link>
-                    <NavDropdown title="" id="basic-nav-dropdown" className="navbarButton">
+                    <Nav.Link href="#home" className="navbarButton textColor1">Home</Nav.Link>
+                    <Nav.Link href="#link" className="navbarButton textColor1">Work</Nav.Link>
+                    <Nav.Link href="#link1" className="navbarButton textColor1">Others</Nav.Link>
+                    <NavDropdown title="" id="basic-nav-dropdown" className="navbarButton textColor1">
                         <NavDropdown.Item 
                             href="https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ" 
                             target="_blank"
