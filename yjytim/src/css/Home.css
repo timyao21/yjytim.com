@@ -30,3 +30,15 @@
 .programmerContainer{
   height: 100vh;
 }
+
+.programmerLabel{
+  text-align: right;
+}
+
+.progress{
+  height: 5px !important;
+  width: 65%;
+}
+/* .progress-bar{
+  width: 70%;
+} */

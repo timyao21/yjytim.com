@@ -9,6 +9,12 @@
 .textColor2{
     color: #D2FAFB;
 }
+.miamiBlue{
+    color: #00B5C8;
+}
+.bg-miamiBlue{
+    background-color: #00B5C8 !important;
+}
 .SacramentoFont{
     font-family: 'Sacramento', cursive;
 }
