@@ -28,17 +28,25 @@
 }
 
 .programmerContainer{
+  min-height: 500px;
   height: 100vh;
 }
 
+.programmerTitle{
+  margin-bottom: 1.5rem;
+}
+
 .programmerLabel{
-  text-align: right;
+  /* text-align: right; */
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 
 .progress{
-  height: 5px !important;
+  height: 4px !important;
   width: 65%;
 }
-/* .progress-bar{
-  width: 70%;
-} */
+
+.seeMoreButton{
+  margin-top: 2.5rem !important;
+}

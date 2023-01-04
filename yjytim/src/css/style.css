@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Sacramento&display=swap');
 .backgroundcolor1{
-    background-color: #232323;
+    background-color: #232323 !important;
     color: #99A8B2;
 }
 .textColor1{
-    color: #99A8B2;
+    color: #99A8B2 !important;
 }
 .textColor2{
     color: #D2FAFB;
 }
+.textColor3{
+    color: #232323 !important;;
+}
 .miamiBlue{
-    color: #00B5C8;
+    color: #00B5C8 !important;
 }
 .bg-miamiBlue{
     background-color: #00B5C8 !important;
