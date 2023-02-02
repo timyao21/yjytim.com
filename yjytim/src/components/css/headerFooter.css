@@ -5,6 +5,15 @@
     width: 4rem;
 }
 
-.socialMLogo{
+.nav{
+    -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    -ms-transition: transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    transition-delay: 0.5s;
+}
 
+.navhide{
+    /* opacity: 0; */
+    transform: translateY(-100px);
 }

@@ -9,10 +9,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, } from "@fortawesome/free-brands-svg-icons"
 //  profileimage and thw logo image
 import logoImage from '../image/logoImage.png'
+import React, { useEffect, useState, useLayoutEffect, useRef} from 'react'
+import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 
 function BasicExample() {
+    const [hideOnScroll, setHideOnScroll] = useState(false)
+    useScrollPosition(({ prevPos, currPos }) => {
+        const isShow = currPos.y < prevPos.y
+        if (isShow !== hideOnScroll) setHideOnScroll(isShow)
+      }, [hideOnScroll])
+
+
   return (
-    <Navbar className="backgroundcolor1 PoppinsFont" variant="dark" fixed="top" expand="lg">
+    // <Navbar className="backgroundcolor1 PoppinsFont nav"  variant="dark" fixed="top" expand="lg">
+    <Navbar className={`backgroundcolor1 PoppinsFont nav  ${hideOnScroll && 'navhide'}`}  variant="dark" fixed="top" expand="lg">
         <Container>
             <Navbar.Brand href="#home">
                 <img
