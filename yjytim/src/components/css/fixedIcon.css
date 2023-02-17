@@ -1,0 +1,12 @@
+.leftFixed{
+    bottom: 10%;
+    right: 88%;
+}
+.rightFixed{
+    bottom: 10%;
+    left: 88%;
+}
+.verticalRule{
+    width: 2px;
+    height: 100px;
+}

@@ -12,8 +12,10 @@ import Icon from '@mui/material/Icon';
 
 
 import Header from '../components/header.js'
+import FixedIcon from '../components/fixedIcon.js'
 import Programmer_Content from '../components/homeProgrammer.js'
 import Footer from '../components/footer.js'
+
 
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -26,13 +28,14 @@ function Home() {
   return (
     <div className="PoppinsFont">
       <Header/>
+      
       <div className="d-flex justify-content-center align-items-center backgroundcolor1 firstContainer text-center">
         <Container className="">
           <h1 className="SacramentoFont miamiBlue title font-weight-bold">Hi, I'm Tim Yao</h1>
           <p>A Computer Science student, programmer and content-creator</p>
         </Container>        
       </div>
-
+      <FixedIcon/>
       <Container className="profileContainer d-flex justify-content-center align-items-center">
         <div>
           <h2 className="text-center">About Me</h2>

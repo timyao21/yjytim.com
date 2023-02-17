@@ -10,7 +10,7 @@ import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-sv
 //  profileimage and thw logo image
 import logoImage from '../image/logoImage.png'
 
-function BasicExample() {
+function Footer() {
   return (
     <div className="backgroundcolor1 text-center">
         <Container>
@@ -42,4 +42,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Footer;
