@@ -14,6 +14,7 @@ import Icon from '@mui/material/Icon';
 import Header from '../components/header.js'
 import FixedIcon from '../components/fixedIcon.js'
 import Programmer_Content from '../components/homeProgrammer.js'
+import Photographer_Content from '../components/imageList'
 import Footer from '../components/footer.js'
 
 
@@ -103,6 +104,7 @@ function Home() {
       </div>
       <Container>
           <h2 className="text-center programmerTitle">A "Rookie" Content Creator</h2>
+          <Photographer_Content/>
         </Container>
       <Footer/>
     </div>
