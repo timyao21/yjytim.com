@@ -16,10 +16,11 @@ function fixedIcon() {
   return (
     <div className="text-center">  
         <div className="position-relative position-relative-example">
-            <div className="rightFixed fixed-bottom display-inline vstack gap-1">
+
+            <div className="rightFixed fixed-bottom vstack gap-2 d-flex">
                 <div>
                     <div class="vr text-center verticalRule"></div>
-                </div>
+                </div>                
                 <FontAwesomeIcon icon={ faYoutube } className="socialMLogo"/>
                 <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/>
                 <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo"/>  
@@ -27,7 +28,7 @@ function fixedIcon() {
                     <div class="vr text-center verticalRule"></div>
                 </div>
             </div>
-            <div className="leftFixed fixed-bottom display-inline vstack gap-1">
+            <div className="leftFixed fixed-bottom vstack gap-2">
                 <div>
                     <div class="vr text-center verticalRule"></div>
                 </div>

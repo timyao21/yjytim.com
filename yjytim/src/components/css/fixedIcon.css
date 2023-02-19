@@ -10,3 +10,11 @@
     width: 2px;
     height: 100px;
 }
+.vertical{
+    rotate: 90deg;
+}
+
+.vl {
+    border-left: 6px solid black;
+    height: 500px;
+  }
