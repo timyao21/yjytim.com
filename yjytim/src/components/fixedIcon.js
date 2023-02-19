@@ -17,26 +17,26 @@ function fixedIcon() {
     <div className="text-center">  
         <div className="position-relative position-relative-example">
 
-            <div className="rightFixed fixed-bottom vstack gap-2 d-flex">
+            <div className="rightFixed fixed-bottom vstack gap-2 d-none d-md-flex">
                 <div>
-                    <div class="vr text-center verticalRule"></div>
+                    <div class="vr text-center verticalRule textColor4"></div>
                 </div>                
-                <FontAwesomeIcon icon={ faYoutube } className="socialMLogo"/>
-                <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/>
-                <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo"/>  
+                <FontAwesomeIcon icon={ faYoutube } className="socialMLog textColor4"/>
+                <FontAwesomeIcon icon={ faInstagram } className="socialMLogo textColor4"/>
+                <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo textColor4"/>  
                 <div>
-                    <div class="vr text-center verticalRule"></div>
+                    <div class="vr text-center verticalRule textColor4"></div>
                 </div>
             </div>
-            <div className="leftFixed fixed-bottom vstack gap-2">
+            <div className="leftFixed fixed-bottom vstack gap-2 d-none d-md-flex">
                 <div>
-                    <div class="vr text-center verticalRule"></div>
+                    <div class="vr text-center verticalRule textColor4"></div>
                 </div>
-                <FontAwesomeIcon icon={ faYoutube } className="socialMLogo"/>
-                <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/>
-                <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo"/>  
+                <FontAwesomeIcon icon={ faYoutube } className="socialMLogo textColor4"/>
+                <FontAwesomeIcon icon={ faInstagram } className="socialMLogo textColor4"/>
+                <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo textColor4"/>  
                 <div>
-                    <div class="vr text-center verticalRule"></div>
+                    <div class="vr text-center verticalRule textColor4"></div>
                 </div>
             </div>
 

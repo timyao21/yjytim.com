@@ -52,7 +52,7 @@ function Home() {
                 <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo"/>  
               </div>
             </Col>
-            <Col xs={12} md={6} className="d-flex justify-content-center align-items-center">
+            <Col xs={12} md={6} className="d-flex justify-content-center align-items-center mt-3">
               <p className="text-left">
                 I am a full-time student living in New York City and currently pursuing a master's degree in Computer Engineering at New York University.
               </p>
@@ -66,10 +66,10 @@ function Home() {
           <h2 className="text-center programmerTitle">A "Rookie" Programmer</h2>
           <p className="text-center ">Always Exploring</p>
           <Row>
-            <Col md={6}>
+            <Col md={6} className="mt-5">
               <Programmer_Content/>
             </Col>
-            <Col className="justify-content-center align-items-center">
+            <Col className="justify-content-center align-items-center mt-5">
               <h3 className="programmerLabel">Python - 95%</h3>
               <div class="progress backgroundcolor1" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar w-100 bg-miamiBlue"></div>
