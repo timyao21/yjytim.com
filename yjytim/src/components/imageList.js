@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import Button from 'react-bootstrap/Button';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 // css
 import './css/imageList.css';
@@ -17,6 +18,7 @@ export default function MasonryImageList() {
                 <ImageList variant="woven" cols={3} gap={8}>
                     {itemList1.map((item) => (
                         <ImageListItem key={item.img}>
+                        
                         <img
                             src={`${item.img}?w=248&fit=crop&auto=format`}
                             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
@@ -26,6 +28,7 @@ export default function MasonryImageList() {
                         />
                         </ImageListItem>
                     ))}
+
                     {itemList2.map((item2) => (
                         <ImageListItem key={item2.img}>
                         {toggl &&(
@@ -42,8 +45,20 @@ export default function MasonryImageList() {
 
                 </ImageList>
             </Box>
-            <div>
-                <Button variant="primary" onClick={() => setToggle(!toggl)}>Primary</Button>{' '}
+            <div 
+            style={{display: "flex",
+              justifyContent: "center",
+              alignContent: "center",}}>
+                <Button 
+                variant="primary" 
+                onClick={() => setToggle(!toggl)}
+                style={{backgroundColor:"transparent", border:'none'}}
+                className="miamiBlue">
+                  <KeyboardDoubleArrowDownIcon/>
+                  <div>
+                          More
+                  </div>
+                  </Button>{' '}
             </div>
         </div>
 
@@ -52,54 +67,42 @@ export default function MasonryImageList() {
 
   const itemList1 = [
     {
-      img: 'https://images.unsplash.com/photo-1549388604-817d15aa0110',
-      title: 'Bed',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1563298723-dcfebaa392e3',
+      img: require('./image/image1.JPG'),
       title: 'Kitchen',
     },
     {
-      img: 'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6',
+      img: require('./image/image2.JPG'),
+      title: 'Kitchen',
+    },
+    {
+      img: require('./image/image3.JPG'),
       title: 'Sink',
     },
     {
-      img: 'https://images.unsplash.com/photo-1525097487452-6278ff080c31',
+      img: require('./image/image4.JPG'),
       title: 'Books',
     },
     {
-      img: 'https://images.unsplash.com/photo-1574180045827-681f8a1a9622',
+      img: require('./image/image5.JPG'),
       title: 'Chairs',
     },
     {
-      img: 'https://images.unsplash.com/photo-1574180045827-681f8a1a9622',
+      img: require('./image/image6.JPG'),
       title: 'Chairs',
     },
   ];
 
   const itemList2 = [
     {
-      img: 'https://images.unsplash.com/photo-1549388604-817d15aa0110',
-      title: 'Bed',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1563298723-dcfebaa392e3',
-      title: 'Kitchen',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6',
-      title: 'Sink',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1525097487452-6278ff080c31',
-      title: 'Books',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1574180045827-681f8a1a9622',
+      img: require('./image/image7.JPG'),
       title: 'Chairs',
     },
     {
-      img: 'https://images.unsplash.com/photo-1574180045827-681f8a1a9622',
+      img: require('./image/image8.JPG'),
+      title: 'Chairs',
+    },
+    {
+      img: require('./image/image9.JPG'),
       title: 'Chairs',
     },
   ];
