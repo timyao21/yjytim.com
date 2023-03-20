@@ -5,7 +5,6 @@ import ImageListItem from '@mui/material/ImageListItem';
 import Button from 'react-bootstrap/Button';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
-import { Link } from "react-router-dom";
 // css
 import './css/imageList.css';
 import '../css/style.css';
@@ -19,9 +18,18 @@ export default function MasonryImageList() {
     
 
     function handleClick() {
-      setButtonIcon(<KeyboardDoubleArrowUpIcon/>);
-      setButtonText('Less');
       setToggle(!toggl)
+      if (toggl === false) {
+        setButtonText('less');
+        setButtonIcon(<KeyboardDoubleArrowUpIcon/>);
+      } else {
+        setButtonText('More');
+        setButtonIcon(<KeyboardDoubleArrowDownIcon/>);
+      }
+    }
+
+    function openImage(Link) {
+      window.open(Link)
     }
 
     return (
@@ -30,36 +38,35 @@ export default function MasonryImageList() {
                 <ImageList variant="woven" cols={3} gap={8}>
                     {itemList1.map((item) => (
                         <ImageListItem key={item.img}>
+                        <div
+                          className='zoom'>
                         <img
                             src={`${item.img}?w=248&fit=crop&auto=format`}
                             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                             alt={item.title}
                             className="images"
                             loading="lazy"
+                            onClick={() => openImage(item.img)}
                         />
+                        </div>
                         </ImageListItem>
                     ))}
 
                     {itemList2.map((item2) => (
-                        <ImageListItem key={item2.img}>
+                        <ImageListItem key={item2.img} style={{margin: '1000 0 0 0'}}>
                         {toggl &&(
-                        <a 
-                        style={{display:'block',
-                                height:'100%'}} 
-                                href="./image/image1.JPG" 
-                                target="_blank"
-                                rel="noreferrer">
-                        <img
-                            src={`${item2.img}?w=248&fit=crop&auto=format`}
-                            srcSet={`${item2.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                            alt={item2.title}
-                            className="images"
-                            loading="lazy"
-                            style={{objectFit: 'cover',
-                            width: '100%',
-                            height: '100%',}}
-                        />
-                        </a>
+                        <div
+                        className='zoom'>
+                              <img
+                                  src={`${item2.img}?w=248&fit=crop&auto=format`}
+                                  srcSet={`${item2.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                  alt={item2.title}
+                                  className="images"
+                                  loading="lazy"
+                                  onClick={() => openImage(item2.img)}
+                                  style={{objectFit: 'cover'}}
+                              />
+                          </div>
                         )}
                         </ImageListItem>
                     ))}                        
