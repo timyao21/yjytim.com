@@ -17,3 +17,12 @@
     /* opacity: 0; */
     transform: translateY(-100px);
 }
+
+.footer{
+    padding-top: 8%;
+    height: 35rem;
+}
+
+.footerIcon{
+    margin: 1rem;
+}

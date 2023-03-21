@@ -48,9 +48,9 @@ function Home() {
               className="profileImage"
               />
               <div className="text-center icon-list">
-                <FontAwesomeIcon icon={ faYoutube } className="socialMLogo"/>
-                <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/>
-                <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo"/>  
+                <FontAwesomeIcon icon={ faYoutube } className="socialMLogo fa-xl icon"/>
+                <FontAwesomeIcon icon={ faInstagram } className="socialMLogo fa-xl icon"/>
+                <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo fa-xl icon"/>  
               </div>
             </Col>
             <Col xs={12} md={6} className="d-flex justify-content-center align-items-center mt-3">
@@ -105,8 +105,9 @@ function Home() {
       <Container>
           <h2 className="text-center programmerTitle">A "Rookie" Content Creator</h2>
           <Photographer_Content/>
-        </Container>
-      <Footer/>
+      </Container>
+        <Footer/>        
+
     </div>
   );
 }

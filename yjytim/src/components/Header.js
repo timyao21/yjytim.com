@@ -45,10 +45,10 @@ function BasicExample() {
                             >
                             <FontAwesomeIcon icon={ faYoutube } className="socialMLogo"/> YouTube
                         </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.4">
+                        <NavDropdown.Item href="#action/3.4" target="_blank">
                             <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/> Photography
                         </NavDropdown.Item>                        
-                        <NavDropdown.Item href="#action/3.2">
+                        <NavDropdown.Item href="#action/3.2" target="_blank">
                            Bilibili
                         </NavDropdown.Item>
 

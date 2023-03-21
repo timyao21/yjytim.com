@@ -12,7 +12,7 @@ import logoImage from '../image/logoImage.png'
 
 function Footer() {
   return (
-    <div className="backgroundcolor1 text-center">
+    <div className="backgroundcolor1 text-center footer">
         <Container>
             <Row>
                 <Col xs={12} md={{ span: 4,order: 'second'}}>
@@ -28,9 +28,9 @@ function Footer() {
                 </Col>
                 <Col xs={6} md={{ span: 4,order: 'last',}}>
                     <div>
-                        <FontAwesomeIcon icon={ faYoutube } className="socialMLogo"/>
-                        <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/>
-                        <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo"/>                    
+                        <FontAwesomeIcon icon={ faYoutube } className="socialMLogo footerIcon fa-xl"/>
+                        <FontAwesomeIcon icon={ faInstagram } className="socialMLogo footerIcon fa-xl"/>
+                        <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo footerIcon fa-xl"/>                    
                     </div>
 
                 </Col>
