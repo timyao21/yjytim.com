@@ -61,8 +61,9 @@ export default function VerticalTabs() {
         onChange={handleChange}
         aria-label="Vertical tabs example"
         sx={{ borderRight: 1, borderColor: 'divider' }}
+        style={{minWidth:"20%"}}
       >
-        <Tab className="textColor1" label="Python" {...a11yProps(0)} />
+        <Tab className="textColor1" label="Python" {...a11yProps(0)}/>
         <Tab className="textColor1" label="Web Design" {...a11yProps(1)} />
         <Tab className="textColor1" label="Java" {...a11yProps(2)} />
         <Tab className="textColor1" label="Database" {...a11yProps(3)} />
@@ -70,22 +71,35 @@ export default function VerticalTabs() {
         <Tab className="textColor1" label="Mobile Apps" {...a11yProps(5)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        Item One
+        <div style={{width:"100%"}}>
+          Python is a versatile and powerful programming language that has a wide range of applications in different industries. As a skilled Python developer, I have honed my expertise in this language and have developed a strong understanding of its various libraries, frameworks, and tools.
+          I specialize in developing web crawlers, handling different types of data, and visualizing them to provide insights that drive business decisions. In addition, I have experience in developing inventory management software, which I did as part of my undergraduate capstone project.
+        </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+      <div style={{width:"100%"}}>
+      I am a skilled web designer with experience in creating beautiful and functional websites. I specialize in using the React framework to design and develop modern, responsive, and user-friendly websites that meet the needs of my clients. In addition, I have worked on several web design projects, including designing and developing the official website for the NYU Tandon Chinese Students and Scholars Association (CSSA). My approach to web design is based on understanding the unique needs and goals of my clients and translating them into an engaging and visually appealing website.
+        </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+      <div style={{width:"100%"}}>
+          Python is a versatile and powerful programming language that has a wide range of applications in different industries. As a skilled Python developer, I have honed my expertise in this language and have developed a strong understanding of its various libraries, frameworks, and tools.
+        </div>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Item Four
+      <div style={{width:"100%"}}>
+          Python is a versatile and powerful programming language that has a wide range of applications in different industries. As a skilled Python developer, I have honed my expertise in this language and have developed a strong understanding of its various libraries, frameworks, and tools.
+        </div>
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Item Five
+      <div style={{width:"100%"}}>
+          Python is a versatile and powerful programming language that has a wide range of applications in different industries. As a skilled Python developer, I have honed my expertise in this language and have developed a strong understanding of its various libraries, frameworks, and tools.
+        </div>
       </TabPanel>
       <TabPanel value={value} index={5}>
-        Item Six
+      <div style={{width:"100%"}}>
+          Python is a versatile and powerful programming language that has a wide range of applications in different industries. As a skilled Python developer, I have honed my expertise in this language and have developed a strong understanding of its various libraries, frameworks, and tools.
+        </div>
       </TabPanel>
     </Box>
   );

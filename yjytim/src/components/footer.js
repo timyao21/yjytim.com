@@ -28,9 +28,15 @@ function Footer() {
                 </Col>
                 <Col xs={6} md={{ span: 4,order: 'last',}}>
                     <div>
-                        <FontAwesomeIcon icon={ faYoutube } className="socialMLogo footerIcon fa-xl"/>
-                        <FontAwesomeIcon icon={ faInstagram } className="socialMLogo footerIcon fa-xl"/>
-                        <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo footerIcon fa-xl"/>                    
+                        <a className="socialMLog textColor1" href='https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ' target={'_blank'} rel="noreferrer">
+                            <FontAwesomeIcon icon={ faYoutube } className="socialMLogo footerIcon fa-xl"/>
+                        </a>
+                        <a className="socialMLog textColor1" href='https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ' target={'_blank'} rel="noreferrer">
+                            <FontAwesomeIcon icon={ faInstagram } className="socialMLogo footerIcon fa-xl"/>
+                        </a>
+                        <a className="socialMLog textColor1" href='https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ' target={'_blank'} rel="noreferrer">
+                            <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo footerIcon fa-xl"/>   
+                        </a>                 
                     </div>
 
                 </Col>
