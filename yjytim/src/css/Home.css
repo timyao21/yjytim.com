@@ -28,7 +28,7 @@
 }
 
 .programmerContainer{
-  min-height: 500px;
+  min-height: 1200px;
   height: 100vh;
 }
 
@@ -53,4 +53,14 @@
 
 .icon{
   margin: 1rem;
+}
+
+.creatorContainer{
+  min-height: 100vh;
+  /* height: 100vh;  */
+}
+
+.creatorTitle{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }

@@ -23,6 +23,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
 
 import profileImage from '../image/profileImage1.png'
+import { padding, style } from '@mui/system';
 
 
 function Home() {
@@ -67,10 +68,10 @@ function Home() {
           <h2 className="text-center programmerTitle">A "Rookie" Programmer</h2>
           <p className="text-center ">Always Exploring</p>
           <Row>
-            <Col md={6} className="mt-5">
+            <Col xs={12} md={6} className="mt-5">
               <Programmer_Content/>
             </Col>
-            <Col className="justify-content-center align-items-center mt-5">
+            <Col xs={12} md={6} className="justify-content-center align-items-center mt-5">
               <h3 className="programmerLabel">Python - 95%</h3>
               <div class="progress backgroundcolor1" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar w-100 bg-miamiBlue"></div>
@@ -102,11 +103,21 @@ function Home() {
           </Row>
         </Container>
       </div>
+
+      <div className='d-flex justify-content-center align-items-center creatorContainer'>
       <Container>
-          <h2 className="text-center programmerTitle">A "Rookie" Content Creator</h2>
-          <Photographer_Content/>
+          <h2 className="text-center creatorTitle">A "Rookie" Content Creator</h2>
+          <div style={{padding: "10%"}}>
+            <h3 className="text-center" style={{paddingBottom: "5%"}}>Photographer</h3>
+            <Photographer_Content/>
+          </div>
+          <div style={{padding: "10%"}}>
+            <h3 className="text-center" style={{paddingBottom: "5%"}}>Film Making</h3>
+          </div>
       </Container>
-        <Footer/>        
+
+      </div>
+      <Footer/>        
 
     </div>
   );

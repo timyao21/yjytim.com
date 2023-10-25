@@ -35,7 +35,7 @@ export default function MasonryImageList() {
     return (
         <div className='imageList'>
             <Box sx={{ }}>
-                <ImageList variant="woven" cols={3} gap={8}>
+                <ImageList variant="woven" cols={3} gap={8} >
                     {itemList1.map((item) => (
                         <ImageListItem key={item.img}>
                         <div

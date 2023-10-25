@@ -15,11 +15,11 @@ function Footer() {
     <div className="backgroundcolor1 text-center footer">
         <Container>
             <Row>
-                <Col xs={12} md={{ span: 4,order: 'second'}}>
+                <Col xs={12} md={{ span: 4, order: 'second'}}>
                     <h3>"Stay hungry, stay foolish."</h3>
                     <h3> — Steve Jobs</h3>
                 </Col>            
-                <Col xs={6} md={{ span: 4,order: 'first' }}>
+                <Col xs={6} md={{ span: 4, order: 'first' }}>
                     <div>
                         <p>Home</p>
                         <p>Work</p>
