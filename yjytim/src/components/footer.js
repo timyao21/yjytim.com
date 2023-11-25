@@ -12,11 +12,11 @@ import logoImage from '../image/logoImage.png'
 
 function Footer() {
   return (
-    <div className="backgroundcolor1 text-center footer">
+    <div className="backgroundcolor1 text-center footer d-flex align-items-center justify-content-center">
         <Container>
             <Row>
                 <Col xs={12} md={{ span: 4, order: 'second'}}>
-                    <h3>"Stay hungry, stay foolish."</h3>
+                    <h3 className='PoppinsFont'>"Stay hungry, stay foolish."</h3>
                     <h3> — Steve Jobs</h3>
                 </Col>            
                 <Col xs={6} md={{ span: 4, order: 'first' }}>

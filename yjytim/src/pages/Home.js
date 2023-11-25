@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //MUI
 import Button from '@mui/material/Button';
-import DoubleArrowSharpIcon from '@mui/icons-material/DoubleArrowSharp';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import Icon from '@mui/material/Icon';
 
 
@@ -14,7 +14,8 @@ import Icon from '@mui/material/Icon';
 import Header from '../components/header.js'
 import FixedIcon from '../components/fixedIcon.js'
 import Programmer_Content from '../components/homeProgrammer.js'
-import Photographer_Content from '../components/imageList'
+// import Photographer_Content from '../components/imageList'
+import Photographer_Content from '../components/homeCreator.js'
 import Footer from '../components/footer.js'
 
 
@@ -56,7 +57,10 @@ function Home() {
             </Col>
             <Col xs={12} md={6} className="d-flex justify-content-center align-items-center mt-3">
               <p className="text-left">
-                I am a full-time student living in New York City and currently pursuing a master's degree in Computer Engineering at New York University.
+                I am a Master's student in Computer Engineering at NYU Tandon. <br></br>
+                My academic and professional journey is rooted in leveraging technology to create impactful solutions. <br></br>
+                With experience in web development and project leadership, I'm passionate about driving innovation in the digital space. <br></br>
+                This website is a window into my projects, experiences, and thoughts on how technology shapes our world.<br></br>
               </p>
             </Col>
           </Row>
@@ -97,7 +101,7 @@ function Home() {
                 <div class="progress-bar w-50 bg-miamiBlue"></div>
               </div>            
               <Button variant="contained" className="bg-miamiBlue textColor3 fw-bold d-flex seeMoreButton">
-                See More <DoubleArrowSharpIcon/>
+                Check out My Github <KeyboardDoubleArrowRightIcon/>
               </Button>            
             </Col>            
           </Row>
@@ -108,17 +112,13 @@ function Home() {
       <Container>
           <h2 className="text-center creatorTitle">A "Rookie" Content Creator</h2>
           <div style={{padding: "10%"}}>
-            <h3 className="text-center" style={{paddingBottom: "5%"}}>Photographer</h3>
+            {/* <h3 className="text-center" style={{paddingBottom: "5%"}}>Photographer</h3> */}
             <Photographer_Content/>
-          </div>
-          <div style={{padding: "10%"}}>
-            <h3 className="text-center" style={{paddingBottom: "5%"}}>Film Making</h3>
           </div>
       </Container>
 
       </div>
-      <Footer/>        
-
+        <Footer/>      
     </div>
   );
 }
