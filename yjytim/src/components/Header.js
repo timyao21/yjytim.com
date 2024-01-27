@@ -37,7 +37,7 @@ function BasicExample() {
                 <Nav className="ms-auto">
                     <Nav.Link href="#home" className="navbarButton textColor1">Home</Nav.Link>
                     <Nav.Link href="#link" className="navbarButton textColor1">Work</Nav.Link>
-                    <Nav.Link href="#link1" className="navbarButton textColor1">Others</Nav.Link>
+                    {/* <Nav.Link href="#link1" className="navbarButton textColor1">Others</Nav.Link> */}
                     <NavDropdown title="" id="basic-nav-dropdown" className="navbarButton textColor1">
                         <NavDropdown.Item 
                             href="https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ" 

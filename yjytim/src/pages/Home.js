@@ -99,10 +99,13 @@ function Home() {
               <h3 className="programmerLabel">Mobile Apps - 50%</h3>
               <div class="progress backgroundcolor1" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar w-50 bg-miamiBlue"></div>
-              </div>            
-              <Button variant="contained" className="bg-miamiBlue textColor3 fw-bold d-flex seeMoreButton">
-                Check out My Github <KeyboardDoubleArrowRightIcon/>
-              </Button>            
+              </div>
+              <a href="https://github.com/biubiubiupiu21" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                <Button variant="contained" className="bg-miamiBlue textColor3 fw-bold d-flex seeMoreButton">
+                  Check out My Github <KeyboardDoubleArrowRightIcon/>
+                </Button>                  
+              </a>            
+          
             </Col>            
           </Row>
         </Container>

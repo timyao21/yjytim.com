@@ -23,7 +23,7 @@ function Footer() {
                     <div>
                         <p>Home</p>
                         <p>Work</p>
-                        <p>Others</p>
+                        {/* <p>Others</p> */}
                     </div>
                 </Col>
                 <Col xs={6} md={{ span: 4,order: 'last',}}>
