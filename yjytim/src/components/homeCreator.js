@@ -165,7 +165,7 @@ export default function homeCreator() {
                         <FontAwesomeIcon icon={ faYoutube } className="socialMLogo fa-xl icon" style={{color: "#ff2600",}}/>
                         <Typography level="h2" noWrap sx={{ fontSize: 'lg' }}>
                             <Link
-                            href="#dribbble-shot"
+                            href="https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ"
                             overlay
                             underline="none"
                             style = {{

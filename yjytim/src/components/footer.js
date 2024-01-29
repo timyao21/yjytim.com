@@ -10,6 +10,8 @@ import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-sv
 //  profileimage and thw logo image
 import logoImage from '../image/logoImage.png'
 
+const emailAddress = 'yjy197@outlook.com';
+
 function Footer() {
   return (
     <div className="backgroundcolor1 text-center footer d-flex align-items-center justify-content-center">
@@ -21,20 +23,20 @@ function Footer() {
                 </Col>            
                 <Col xs={6} md={{ span: 4, order: 'first' }}>
                     <div>
-                        <p>Home</p>
-                        <p>Work</p>
-                        {/* <p>Others</p> */}
+                        <a className='linkHover' href="/home"><p>Home</p></a>
+                        <a className='linkHover' href="/work"><p>Work</p></a>
+                        <a className='linkHover' href={`mailto:${emailAddress}`}><p>Contact Me</p></a>
                     </div>
                 </Col>
                 <Col xs={6} md={{ span: 4,order: 'last',}}>
                     <div>
-                        <a className="socialMLog textColor1" href='https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ' target={'_blank'} rel="noreferrer">
+                        <a className="socialMLog linkHover" href='https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ' target={'_blank'} rel="noreferrer">
                             <FontAwesomeIcon icon={ faYoutube } className="socialMLogo footerIcon fa-xl"/>
                         </a>
-                        <a className="socialMLog textColor1" href='https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ' target={'_blank'} rel="noreferrer">
+                        <a className="socialMLog linkHover" href='https://www.instagram.com/yjytimmm_21?igsh=cmh2MjlxcTNuMmY0&utm_source=qr' target={'_blank'} rel="noreferrer">
                             <FontAwesomeIcon icon={ faInstagram } className="socialMLogo footerIcon fa-xl"/>
                         </a>
-                        <a className="socialMLog textColor1" href='https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ' target={'_blank'} rel="noreferrer">
+                        <a className="socialMLog linkHover" href='https://www.linkedin.com/in/junyuyao-tim/' target={'_blank'} rel="noreferrer">
                             <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo footerIcon fa-xl"/>   
                         </a>                 
                     </div>

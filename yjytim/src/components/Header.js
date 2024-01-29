@@ -1,16 +1,19 @@
 // Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
+import Dropdown from 'react-bootstrap/Dropdown';
 // css
 import './css/headerFooter.css';
 import '../css/style.css';
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faInstagram, } from "@fortawesome/free-brands-svg-icons"
+import { faYoutube, faInstagram, faGithub} from "@fortawesome/free-brands-svg-icons"
+import { faCircleChevronDown } from '@fortawesome/free-solid-svg-icons'
 //  profileimage and thw logo image
 import logoImage from '../image/logoImage.png'
 import React, { useEffect, useState, useLayoutEffect, useRef} from 'react'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
+import { Typography } from '@mui/material';
 
 function BasicExample() {
     const [hideOnScroll, setHideOnScroll] = useState(false)
@@ -19,12 +22,13 @@ function BasicExample() {
         if (isShow !== hideOnScroll) setHideOnScroll(isShow)
       }, [hideOnScroll])
 
+const emailAddress = 'yjy197@outlook.com';
 
-  return (
+return (
     // <Navbar className="backgroundcolor1 PoppinsFont nav"  variant="dark" fixed="top" expand="lg">
     <Navbar className={`backgroundcolor1 PoppinsFont nav  ${hideOnScroll && 'navhide'}`}  variant="dark" fixed="top" expand="lg">
         <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/home">
                 <img
                 alt=""
                 src={logoImage}
@@ -32,34 +36,42 @@ function BasicExample() {
                 />{' '}
                 <p class="d-inline-block align-text-top textColor1" style={{ fontSize: "1.4rem" }}>Junyu Yao</p>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ms-auto">
-                    <Nav.Link href="#home" className="navbarButton textColor1">Home</Nav.Link>
-                    <Nav.Link href="#link" className="navbarButton textColor1">Work</Nav.Link>
-                    {/* <Nav.Link href="#link1" className="navbarButton textColor1">Others</Nav.Link> */}
-                    <NavDropdown title="" id="basic-nav-dropdown" className="navbarButton textColor1">
-                        <NavDropdown.Item 
-                            href="https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ" 
-                            target="_blank"
-                            >
-                            <FontAwesomeIcon icon={ faYoutube } className="socialMLogo"/> YouTube
-                        </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.4" target="_blank">
-                            <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/> Photography
-                        </NavDropdown.Item>                        
-                        <NavDropdown.Item href="#action/3.2" target="_blank">
-                           Bilibili
-                        </NavDropdown.Item>
+            <Nav>
+                <Nav.Link href="/home" className="navbarButton textColor1">Home</Nav.Link>
+                <Nav.Link href="#link" className="navbarButton textColor1">Work</Nav.Link>
 
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.6">
-                            Contact me
-                        </NavDropdown.Item>
-                    </NavDropdown>
-                </Nav>
-                </Navbar.Collapse>
-            </Container>
+                <Dropdown>
+                    <Dropdown.Toggle id="dropdown-basic" className='btn-dark backgroundcolor1 textColor1' style={{ outline: "none", boxShadow: 'none'}}>
+                        More
+                    </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                            <NavDropdown.Item href="https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ" target="_blank">
+                                <FontAwesomeIcon icon={ faYoutube } className="socialMLogo"/> YouTube
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="https://www.instagram.com/yjytimmm_21?igsh=cmh2MjlxcTNuMmY0&utm_source=qr" target="_blank">
+                                <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/> Instagram
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="https://www.instagram.com/yjytim.jpg?igsh=cGZnZnBpZGIwY2xl&utm_source=qr" target="_blank">
+                                <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/> Photography
+                            </NavDropdown.Item> 
+                            <NavDropdown.Item href="https://www.instagram.com/yjytim.jpg?igsh=cGZnZnBpZGIwY2xl&utm_source=qr" target="_blank">
+                                <FontAwesomeIcon icon={ faGithub } className="socialMLogo"/> Github
+                            </NavDropdown.Item>              
+                            <NavDropdown.Item href="https://space.bilibili.com/626701417?spm_id_from=333.1007.0.0" target="_blank">
+                                Bilibili
+                            </NavDropdown.Item>
+
+                            <NavDropdown.Divider/>
+                            <NavDropdown.Item href={`mailto:${emailAddress}`}>
+                                Contact me
+                            </NavDropdown.Item>
+                    </Dropdown.Menu>
+
+                </Dropdown>
+            </Nav>
+
+        </Container>
     </Navbar>
   );
 }

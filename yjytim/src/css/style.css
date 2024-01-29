@@ -31,3 +31,25 @@
 .PoppinsFont{
     font-family: 'Poppins', sans-serif;
 }
+
+a{
+    text-decoration: none !important;
+}
+
+.linkHover {
+    color: #99A8B2;
+    text-decoration: none; /* Optional: Removes the underline */
+}
+
+.linkHover:hover {
+    color: #00B5C8; /* Replace with the color you want on hover */
+}
+
+.linkHover3 {
+    color: #232323;
+    text-decoration: none; /* Optional: Removes the underline */
+}
+
+.linkHover3:hover {
+    color: #00B5C8; /* Replace with the color you want on hover */
+}

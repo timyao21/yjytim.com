@@ -50,9 +50,15 @@ function Home() {
               className="profileImage"
               />
               <div className="text-center icon-list">
-                <FontAwesomeIcon icon={ faYoutube } className="socialMLogo fa-xl icon"/>
-                <FontAwesomeIcon icon={ faInstagram } className="socialMLogo fa-xl icon"/>
-                <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo fa-xl icon"/>  
+                <a className="socialMLog linkHover3" href='https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ' target={'_blank'} rel="noreferrer">
+                  <FontAwesomeIcon icon={ faYoutube } className="socialMLogo fa-xl icon"/>
+                </a>
+                <a className="socialMLog linkHover3" href='https://www.instagram.com/yjytimmm_21?igsh=cmh2MjlxcTNuMmY0&utm_source=qr' target={'_blank'} rel="noreferrer">
+                  <FontAwesomeIcon icon={ faInstagram } className="socialMLogo fa-xl icon"/>
+                </a>
+                <a className="socialMLog linkHover3" href='https://www.linkedin.com/in/junyuyao-tim/' target={'_blank'} rel="noreferrer">
+                  <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo fa-xl icon"/>  
+                </a>
               </div>
             </Col>
             <Col xs={12} md={6} className="d-flex justify-content-center align-items-center mt-3">
@@ -100,12 +106,13 @@ function Home() {
               <div class="progress backgroundcolor1" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                 <div class="progress-bar w-50 bg-miamiBlue"></div>
               </div>
-              <a href="https://github.com/biubiubiupiu21" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                <Button variant="contained" className="bg-miamiBlue textColor3 fw-bold d-flex seeMoreButton">
+
+              <div>
+                <Button href="https://github.com/biubiubiupiu21" variant="contained" className="fw-bold seeMoreButton">
                   Check out My Github <KeyboardDoubleArrowRightIcon/>
-                </Button>                  
-              </a>            
-          
+                </Button>                              
+              </div>
+              
             </Col>            
           </Row>
         </Container>
@@ -115,7 +122,6 @@ function Home() {
       <Container>
           <h2 className="text-center creatorTitle">A "Rookie" Content Creator</h2>
           <div style={{padding: "10%"}}>
-            {/* <h3 className="text-center" style={{paddingBottom: "5%"}}>Photographer</h3> */}
             <Photographer_Content/>
           </div>
       </Container>

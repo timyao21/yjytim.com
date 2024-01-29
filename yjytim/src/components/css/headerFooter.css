@@ -30,3 +30,8 @@
 .copyright{
     font-size: 0.8rem;
 }
+
+.btn{
+    outline: none !important;
+    box-shadow: none !important;
+}
