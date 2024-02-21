@@ -78,27 +78,32 @@ export default function VerticalTabs() {
       </TabPanel>
       <TabPanel value={value} index={1}>
       <div style={{width:"100%"}}>
-      I am a skilled web designer with experience in creating beautiful and functional websites. I specialize in using the React framework to design and develop modern, responsive, and user-friendly websites that meet the needs of my clients. In addition, I have worked on several web design projects, including designing and developing the official website for the NYU Tandon Chinese Students and Scholars Association (CSSA). My approach to web design is based on understanding the unique needs and goals of my clients and translating them into an engaging and visually appealing website.
+          I am a skilled web designer with experience in creating beautiful and functional websites. I specialize in using the React framework to design and develop modern, responsive, and user-friendly websites that meet the needs of my clients. In addition, I have worked on several web design projects, including designing and developing the official website for the NYU Tandon Chinese Students and Scholars Association (CSSA). My approach to web design is based on understanding the unique needs and goals of my clients and translating them into an engaging and visually appealing website.
         </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
       <div style={{width:"100%"}}>
-          Python is a versatile and powerful programming language that has a wide range of applications in different industries. As a skilled Python developer, I have honed my expertise in this language and have developed a strong understanding of its various libraries, frameworks, and tools.
+          My experience includes developing an Inventory Management Software that enhanced operational efficiencies, showcasing my ability to solve complex problems using Java. 
+          My technical toolkit also features Python, JavaScript, and SQL, enabling versatile software development.
         </div>
       </TabPanel>
       <TabPanel value={value} index={3}>
       <div style={{width:"100%"}}>
-          Python is a versatile and powerful programming language that has a wide range of applications in different industries. As a skilled Python developer, I have honed my expertise in this language and have developed a strong understanding of its various libraries, frameworks, and tools.
+          Educated in Computer Science with a minor in Information Systems at Washington College, I've mastered database systems, employing SQL, MySQL, and Tableau to drive projects towards peak efficiency and performance. 
+          My work ranges from analytical studies using Python and SQL to boosting web SEO and engagement through database optimization. 
+          I'm driven by the challenge of extending data's potential, striving to surpass expectations with every solution.
         </div>
       </TabPanel>
       <TabPanel value={value} index={4}>
       <div style={{width:"100%"}}>
-          Python is a versatile and powerful programming language that has a wide range of applications in different industries. As a skilled Python developer, I have honed my expertise in this language and have developed a strong understanding of its various libraries, frameworks, and tools.
+          My journey in programming began with C++ during high school, laying the groundwork for a passion in technology that has only grown. 
+          This foundation has not only taught me the importance of efficiency and maintainability in code but also enabled me to quickly adapt to and excel in various technologies. 
+          Dive into my projects to see how a strong start with C++ has propelled my professional development.
         </div>
       </TabPanel>
       <TabPanel value={value} index={5}>
       <div style={{width:"100%"}}>
-          Python is a versatile and powerful programming language that has a wide range of applications in different industries. As a skilled Python developer, I have honed my expertise in this language and have developed a strong understanding of its various libraries, frameworks, and tools.
+          Mobile Apps
         </div>
       </TabPanel>
     </Box>

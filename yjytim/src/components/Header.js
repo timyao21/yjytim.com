@@ -28,7 +28,7 @@ return (
     // <Navbar className="backgroundcolor1 PoppinsFont nav"  variant="dark" fixed="top" expand="lg">
     <Navbar className={`backgroundcolor1 PoppinsFont nav  ${hideOnScroll && 'navhide'}`}  variant="dark" fixed="top" expand="lg">
         <Container>
-            <Navbar.Brand href="/home">
+            <Navbar.Brand href="/">
                 <img
                 alt=""
                 src={logoImage}
@@ -37,8 +37,8 @@ return (
                 <p class="d-inline-block align-text-top textColor1" style={{ fontSize: "1.4rem" }}>Junyu Yao</p>
             </Navbar.Brand>
             <Nav>
-                <Nav.Link href="/home" className="navbarButton textColor1">Home</Nav.Link>
-                <Nav.Link href="#link" className="navbarButton textColor1">Work</Nav.Link>
+                <Nav.Link href="/" className="navbarButton textColor1">Home</Nav.Link>
+                <Nav.Link href="https://github.com/biubiubiupiu21" className="navbarButton textColor1" target={'_blank'}>Work</Nav.Link>
 
                 <Dropdown>
                     <Dropdown.Toggle id="dropdown-basic" className='btn-dark backgroundcolor1 textColor1' style={{ outline: "none", boxShadow: 'none'}}>

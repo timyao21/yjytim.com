@@ -108,7 +108,7 @@ function Home() {
               </div>
 
               <div>
-                <Button href="https://github.com/biubiubiupiu21" variant="contained" className="fw-bold seeMoreButton">
+                <Button href="https://github.com/biubiubiupiu21" variant="contained" className="fw-bold seeMoreButton" target="_blank">
                   Check out My Github <KeyboardDoubleArrowRightIcon/>
                 </Button>                              
               </div>
