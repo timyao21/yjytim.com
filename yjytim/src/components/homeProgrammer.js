@@ -60,7 +60,7 @@ export default function VerticalTabs() {
             </AwesomeButton>
             <AwesomeButton
               cssModule={AwesomeButtonStyles}
-              type="danger"
+              type="primary"
               style={{ margin: '12px', width: "100%", height:"85px"}}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <FaGithub size={25} />
