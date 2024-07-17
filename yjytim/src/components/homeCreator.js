@@ -4,8 +4,6 @@ import Avatar from '@mui/joy/Avatar';
 import Box from '@mui/joy/Box';
 import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
-import Chip from '@mui/joy/Chip';
-import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
 import Link from '@mui/joy/Link';
 import Favorite from '@mui/icons-material/Favorite';
@@ -20,7 +18,6 @@ import profileImage from '../image/profileImage1.png'
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
-import { width } from '@mui/system';
 
 
 export default function homeCreator() {

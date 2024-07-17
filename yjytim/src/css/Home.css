@@ -16,10 +16,9 @@
 }
 
 .profileContainer{
-  height: 90vh;
-  min-height: 800px;
-  /* margin-top: 7vh;
-  margin-bottom: 12vh; */
+  /* height: 90vh;
+  min-height: 800px; */
+  margin: 10vh;
 }
 
 .profileImage{
@@ -28,12 +27,12 @@
 }
 
 .programmerContainer{
-  min-height: 1200px;
-  height: 100vh;
+  /* min-height: 1200px;
+  height: 100vh; */
+
 }
 
 .programmerTitle{
-  margin-bottom: 1.5rem;
 }
 
 .programmerLabel{
@@ -47,26 +46,13 @@
   width: 65%;
 }
 
-.seeMoreButton{
-  color: #232323 !important;
-  background-color:#00B5C8 !important;
-  margin-top: 2.5rem !important;
-  transition: color 0.5s ease;
-  transition: background-color 0.5s ease;
-}
-
-.seeMoreButton:hover {
-  color: #00B5C8 !important; /* Replace with the new background color */
-  background-color: #232323 !important;
-}
-
 .icon{
   margin: 1rem;
 }
 
 .creatorContainer{
-  min-height: 50vh;
-  height: 100vh; 
+  /* min-height: 50vh;
+  height: 100vh;  */
 }
 
 .creatorTitle{

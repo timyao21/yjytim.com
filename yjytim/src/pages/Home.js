@@ -1,14 +1,12 @@
 
 import '../css/Home.css';
 import '../css/style.css';
+import * as React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //MUI
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import Icon from '@mui/material/Icon';
 
 import Header from '../components/Header.js'
 import FixedIcon from '../components/fixedIcon.js'
@@ -75,22 +73,21 @@ function Home() {
         </div>
       </Container>
 
-      <div className="d-flex justify-content-center align-items-center backgroundcolor1 programmerContainer">
+      <div className="justify-content-center align-items-center backgroundcolor1">
         <Container maxWidth="md">
-          <h2 className="text-center programmerTitle">A "Rookie" Programmer</h2>
+          <h2 className="text-center programmerTitle" style={{margin: "20px 0"}}>A "Rookie" Programmer</h2>
           <p className="text-center ">Always Exploring</p>
           <Programmer_Content/>
         </Container>
       </div>
 
-      <div className='d-flex justify-content-center align-items-center creatorContainer'>
-      <Container>
-          <h2 className="text-center creatorTitle">A "Rookie" Content Creator</h2>
-          <div style={{padding: "10%"}}>
-            <Photographer_Content/>
-          </div>
-      </Container>
-
+      <div className='d-flex justify-content-center align-items-center'>
+        <Container maxWidth="md">
+            <h2 className="text-center creatorTitle">A "Rookie" Content Creator</h2>
+            <div style={{padding: "10%"}}>
+              <Photographer_Content/>
+            </div>
+        </Container>
       </div>
         <Footer/>      
     </div>

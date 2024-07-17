@@ -1,10 +1,6 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import {Row, Col, Container} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
 import Grid from '@mui/material/Grid';
 
 // css
@@ -12,6 +8,7 @@ import './css/homeProgrammer.css';
 import '../css/style.css';
 import { AwesomeButton } from 'react-awesome-button';
 import AwesomeButtonStyles from 'react-awesome-button/src/styles/themes/theme-bruce/styles.module.scss';
+import AwesomeButtonC137Styles from 'react-awesome-button/src/styles/themes/theme-rickiest/styles.module.scss';
 
 // icon
 import { FaComputer } from "react-icons/fa6";
@@ -30,10 +27,10 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { FaAws } from "react-icons/fa";
 import { FaGit } from "react-icons/fa";
 
-export default function VerticalTabs() {
+export default function homeProgrammer() {
   return (
     <Box
-      sx={{ flexGrow: 1, bgcolor: 'background.paper', display: '', height: 450, width: "100%"}}
+      sx={{width: "100%"}}
       className="backgroundcolor1"
     >
       <Row style={{width:"100%"}}>
@@ -42,7 +39,7 @@ export default function VerticalTabs() {
             <AwesomeButton
               cssModule={AwesomeButtonStyles}
               type="primary"
-              style={{ margin: '12px', width: "100%", height:"150px"}}
+              style={{ margin: '12px', width: "100%", height:"195px"}}
               href="https://nyutandoncssa.com/#/">
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <FaComputer size={25} />
@@ -50,18 +47,10 @@ export default function VerticalTabs() {
               </div>
             </AwesomeButton>
             <AwesomeButton
-              cssModule={AwesomeButtonStyles}
-              type="primary"
-              style={{ margin: '12px', width: "100%", height:"150px"}}>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <FaComputer size={25} />
-                <h6 style={{ margin: 0 }}>TechCompare</h6>
-              </div>
-            </AwesomeButton>
-            <AwesomeButton
-              cssModule={AwesomeButtonStyles}
-              type="primary"
-              style={{ margin: '12px', width: "100%", height:"85px"}}>
+              cssModule={AwesomeButtonC137Styles}
+              type="secondary"
+              style={{ margin: '12px', width: "100%", height:"110px"}}
+              href="https://github.com/biubiubiupiu21">
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <FaGithub size={25} />
                 <h6 style={{ margin: 0 }}>More @ Github</h6>
