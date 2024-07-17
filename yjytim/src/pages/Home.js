@@ -1,17 +1,16 @@
 
 import '../css/Home.css';
 import '../css/style.css';
-import {Row, Col, Container} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //MUI
+import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import Icon from '@mui/material/Icon';
 
-
-
-import Header from '../components/header.js'
+import Header from '../components/Header.js'
 import FixedIcon from '../components/fixedIcon.js'
 import Programmer_Content from '../components/homeProgrammer.js'
 // import Photographer_Content from '../components/imageList'
@@ -33,13 +32,15 @@ function Home() {
       <Header/>
       
       <div className="d-flex justify-content-center align-items-center backgroundcolor1 firstContainer text-center">
-        <Container className="">
+        <Container maxWidth="md">
           <h1 className="SacramentoFont miamiBlue title font-weight-bold">Hi, I'm Tim Yao</h1>
-          <p>A Computer Science student, programmer and content-creator</p>
+          <p>A M.S. Computer Engineering Student, Programmer and Content-Creator</p>
         </Container>        
       </div>
+
       <FixedIcon/>
-      <Container className="profileContainer d-flex justify-content-center align-items-center">
+
+      <Container maxWidth="md" className="profileContainer d-flex justify-content-center align-items-center">
         <div>
           <h2 className="text-center">About Me</h2>
           <Row>
@@ -62,11 +63,12 @@ function Home() {
               </div>
             </Col>
             <Col xs={12} md={6} className="d-flex justify-content-center align-items-center mt-3">
-              <p className="text-left">
-                I am a Master's student in Computer Engineering at NYU Tandon. <br></br>
-                My academic and professional journey is rooted in leveraging technology to create impactful solutions. <br></br>
-                With experience in web development and project leadership, I'm passionate about driving innovation in the digital space. <br></br>
-                This website is a window into my projects, experiences, and thoughts on how technology shapes our world.<br></br>
+              <p className="text-left" style={{ lineHeight: 2 }}>
+                I am Junyu (Tim) Yao, a computer engineer with a Master's from NYU Tandon School of Engineering and a Bachelor's from Washington College. <br></br> <br></br>
+                My academic and professional journey is rooted in leveraging technology to create impactful solutions. 
+                I specialize in machine learning, network security, and full-stack development, with proficiency in <u>Python</u>, <u>Java</u>, <u>JavaScript</u>, <u>React</u>, <u>SQL</u>, and more <a href='https://github.com/biubiubiupiu21' target={'_blank'}>@My Github Page</a> <br></br> <br></br>
+                With experience in web development and project leadership, I'm passionate about driving innovation in the digital space. This website is a window into my projects, experiences, and thoughts on how technology shapes our world.<br></br>
+                Let's connect and explore opportunities for collaboration.
               </p>
             </Col>
           </Row>
@@ -74,47 +76,10 @@ function Home() {
       </Container>
 
       <div className="d-flex justify-content-center align-items-center backgroundcolor1 programmerContainer">
-        <Container>
+        <Container maxWidth="md">
           <h2 className="text-center programmerTitle">A "Rookie" Programmer</h2>
           <p className="text-center ">Always Exploring</p>
-          <Row>
-            <Col xs={12} md={6} className="mt-5">
-              <Programmer_Content/>
-            </Col>
-            <Col xs={12} md={6} className="justify-content-center align-items-center mt-5">
-              <h3 className="programmerLabel">Python - 95%</h3>
-              <div class="progress backgroundcolor1" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar w-100 bg-miamiBlue"></div>
-              </div>
-              <h3 className="programmerLabel">Web Design - 70%</h3>
-              <div class="progress backgroundcolor1" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar w-75 bg-miamiBlue"></div>
-              </div>
-              <h3 className="programmerLabel">Java - 70%</h3>
-              <div class="progress backgroundcolor1" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar w-75 bg-miamiBlue"></div>
-              </div>
-              <h3 className="programmerLabel">Database - 70%</h3>
-              <div class="progress backgroundcolor1" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar w-75 bg-miamiBlue"></div>
-              </div>
-              <h3 className="programmerLabel">C++ - 50%</h3>
-              <div class="progress backgroundcolor1" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar w-50 bg-miamiBlue"></div>
-              </div>
-              <h3 className="programmerLabel">Mobile Apps - 50%</h3>
-              <div class="progress backgroundcolor1" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar w-50 bg-miamiBlue"></div>
-              </div>
-
-              <div>
-                <Button href="https://github.com/biubiubiupiu21" variant="contained" className="fw-bold seeMoreButton" target="_blank">
-                  Check out My Github <KeyboardDoubleArrowRightIcon/>
-                </Button>                              
-              </div>
-              
-            </Col>            
-          </Row>
+          <Programmer_Content/>
         </Container>
       </div>
 

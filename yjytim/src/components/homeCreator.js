@@ -168,6 +168,7 @@ export default function homeCreator() {
                             href="https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ"
                             overlay
                             underline="none"
+                            target="_blank"
                             style = {{
                                 color: '#fff',
                                 textOverflow: 'ellipsis',
