@@ -9,6 +9,7 @@ import '../css/style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faGithub} from "@fortawesome/free-brands-svg-icons"
 import { faCircleChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { AiOutlineBilibili } from "react-icons/ai";
 //  profileimage and thw logo image
 import logoImage from '../image/logoImage.png'
 import React, { useEffect, useState, useLayoutEffect, useRef} from 'react'
@@ -46,26 +47,26 @@ return (
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                            <NavDropdown.Item href="https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ" target="_blank">
-                                <FontAwesomeIcon icon={ faYoutube } className="socialMLogo"/> YouTube
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="https://www.instagram.com/yjytimmm_21?igsh=cmh2MjlxcTNuMmY0&utm_source=qr" target="_blank">
-                                <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/> Instagram
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="https://www.instagram.com/yjytim.jpg?igsh=cGZnZnBpZGIwY2xl&utm_source=qr" target="_blank">
-                                <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/> Photography
-                            </NavDropdown.Item> 
-                            <NavDropdown.Item href="https://www.instagram.com/yjytim.jpg?igsh=cGZnZnBpZGIwY2xl&utm_source=qr" target="_blank">
-                                <FontAwesomeIcon icon={ faGithub } className="socialMLogo"/> Github
-                            </NavDropdown.Item>              
-                            <NavDropdown.Item href="https://space.bilibili.com/626701417?spm_id_from=333.1007.0.0" target="_blank">
-                                Bilibili
-                            </NavDropdown.Item>
+                        <NavDropdown.Item href="https://www.instagram.com/yjytim.jpg?igsh=cGZnZnBpZGIwY2xl&utm_source=qr" target="_blank">
+                            <FontAwesomeIcon icon={ faGithub } className="socialMLogo"/> Github
+                        </NavDropdown.Item>  
+                        <NavDropdown.Item href="https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ" target="_blank">
+                            <FontAwesomeIcon icon={ faYoutube } className="socialMLogo"/> YouTube
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="https://space.bilibili.com/626701417?spm_id_from=333.1007.0.0" target="_blank">
+                            <AiOutlineBilibili /> Bilibili
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="https://www.instagram.com/yjytimmm_21?igsh=cmh2MjlxcTNuMmY0&utm_source=qr" target="_blank">
+                            <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/> Instagram
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="https://www.instagram.com/yjytim.jpg?igsh=cGZnZnBpZGIwY2xl&utm_source=qr" target="_blank">
+                            <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/> Photography
+                        </NavDropdown.Item>             
 
-                            <NavDropdown.Divider/>
-                            <NavDropdown.Item href={`mailto:${emailAddress}`}>
-                                Contact me
-                            </NavDropdown.Item>
+                        <NavDropdown.Divider/>
+                        <NavDropdown.Item href={`mailto:${emailAddress}`}>
+                            Contact me
+                        </NavDropdown.Item>
                     </Dropdown.Menu>
 
                 </Dropdown>
