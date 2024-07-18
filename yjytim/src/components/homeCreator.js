@@ -4,13 +4,8 @@ import Avatar from '@mui/joy/Avatar';
 import Box from '@mui/joy/Box';
 import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
-import Chip from '@mui/joy/Chip';
-import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
 import Link from '@mui/joy/Link';
-import Favorite from '@mui/icons-material/Favorite';
-import Visibility from '@mui/icons-material/Visibility';
-import CreateNewFolder from '@mui/icons-material/CreateNewFolder';
 import Grid from '@mui/joy/Grid';
 
 import Ins_image from './media/image5.JPG'
@@ -19,8 +14,7 @@ import profileImage from '../image/profileImage1.png'
 
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
-import { width } from '@mui/system';
+import { faYoutube, faInstagram} from "@fortawesome/free-brands-svg-icons"
 
 
 export default function homeCreator() {
@@ -168,6 +162,7 @@ export default function homeCreator() {
                             href="https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ"
                             overlay
                             underline="none"
+                            target="_blank"
                             style = {{
                                 color: '#fff',
                                 textOverflow: 'ellipsis',
