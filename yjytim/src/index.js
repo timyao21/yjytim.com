@@ -3,19 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './css/index.css';
 import Home from './pages/Home.js';
 import reportWebVitals from './reportWebVitals';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Define a new component for routing
 function AppWithRouter() {
   return (
     // <BrowserRouter>
-    <Routes>
-      <Switch>
-        <Route path="/" element={<Home />} /> 
-      </Switch>
-      {/* <Route path="/work" element={<Work />} /> */}
-      {/* Add more routes here */}
-    </Routes>
+    <Router>
+      <Routes>
+          <Route path="/" element={<Home />} />       
+          {/* <Route path="/work" element={<Work />} /> */}
+          {/* Add more routes here */}
+      </Routes>
+    </Router>
     // </BrowserRouter>
   );
 }
