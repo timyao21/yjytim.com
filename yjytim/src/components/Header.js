@@ -67,9 +67,11 @@ return (
                                 </NavDropdown.Item>             
 
                                 <NavDropdown.Divider/>
-                                {/* <NavDropdown.Item href={mailto:${emailAddress}}>
+
+                                <NavDropdown.Item href={'mailto:yjy197@outlook.com'}>
                                     Contact me
-                                </NavDropdown.Item> */}
+                                </NavDropdown.Item>
+
                             </Dropdown.Menu>
                         </Dropdown>
                     </Nav>
