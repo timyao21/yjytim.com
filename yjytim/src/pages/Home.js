@@ -21,7 +21,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
 
 import profileImage from '../image/profileImage1.png'
-import { padding, style } from '@mui/system';
 
 
 function Home() {
@@ -73,16 +72,16 @@ function Home() {
         </div>
       </Container>
 
-      <div className="justify-content-center align-items-center backgroundcolor1">
+      <div className="justify-content-center align-items-center backgroundcolor1" style={{paddingTop: "10vh", paddingBottom: "10vh"}}>
         <Container maxWidth="md">
-          <h2 className="text-center programmerTitle" style={{margin: "20px 0"}}>A "Rookie" Programmer</h2>
+          <h2 className="text-center programmerTitle">A "Rookie" Programmer</h2>
           <p className="text-center ">Always Exploring</p>
           <Programmer_Content/>
         </Container>
       </div>
 
-      <div className='d-flex justify-content-center align-items-center'>
-        <Container maxWidth="md">
+      <div className='justify-content-center align-items-center' style={{paddingTop: "10vh", paddingBottom: "10vh"}}>
+        <Container maxWidth="lg">
             <h2 className="text-center creatorTitle">A "Rookie" Content Creator</h2>
             <div style={{padding: "10%"}}>
               <Photographer_Content/>

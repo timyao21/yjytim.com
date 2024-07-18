@@ -6,9 +6,6 @@ import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
 import Typography from '@mui/joy/Typography';
 import Link from '@mui/joy/Link';
-import Favorite from '@mui/icons-material/Favorite';
-import Visibility from '@mui/icons-material/Visibility';
-import CreateNewFolder from '@mui/icons-material/CreateNewFolder';
 import Grid from '@mui/joy/Grid';
 
 import Ins_image from './media/image5.JPG'
@@ -17,7 +14,7 @@ import profileImage from '../image/profileImage1.png'
 
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
+import { faYoutube, faInstagram} from "@fortawesome/free-brands-svg-icons"
 
 
 export default function homeCreator() {
