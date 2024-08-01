@@ -16,10 +16,6 @@ Welcome to the repository for my personal website! This site is (yjytim.com 3.0)
 - **Database**: MongoDB
 - **Hosting**: Github Page
 
-## Contributing
-
-I welcome contributions to improve my personal website. If you have any ideas or suggestions, please open an issue or submit a pull request.
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
