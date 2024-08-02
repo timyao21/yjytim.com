@@ -26,7 +26,6 @@ import profileImage from '../image/profileImage1.png'
 function Home() {
   return (
     <div className="PoppinsFont">
-      <Header/>
       
       <div className="d-flex justify-content-center align-items-center backgroundcolor1 firstContainer text-center">
         <Container maxWidth="md">
@@ -87,8 +86,7 @@ function Home() {
               <Photographer_Content/>
             </div>
         </Container>
-      </div>
-        <Footer/>      
+      </div>    
     </div>
   );
 }
