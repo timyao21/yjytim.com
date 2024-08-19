@@ -4,6 +4,7 @@ import '../css/style.css';
 import * as React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styled from 'styled-components';
 
 //MUI
 import Container from '@mui/material/Container';
@@ -20,13 +21,30 @@ import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-sv
 import profileImage from '../image/profileImage1.png'
 
 
+const ResponsiveText = styled.p`
+  font-size: 66px;
+
+  @media (max-width: 1200px) {
+    font-size: 66px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 39px;
+  }
+`;
+
+
 function Home() {
   return (
     <div className="PoppinsFont">
       
       <div className="d-flex justify-content-center align-items-center backgroundcolor1 firstContainer text-center">
         <Container maxWidth="md">
-          <h1 className="SacramentoFont miamiBlue title font-weight-bold">Hi, I'm Tim Yao</h1>
+          <ResponsiveText className="SacramentoFont miamiBlue title font-weight-bold">Hi, I'm Tim Yao</ResponsiveText>
           <p>A M.S. Computer Engineering Student, Programmer and Content-Creator</p>
         </Container>        
       </div>
