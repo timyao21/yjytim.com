@@ -27,6 +27,9 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { FaAws } from "react-icons/fa";
 import { FaGit } from "react-icons/fa";
 
+// links
+import {githubUrl, tandonCSSAUrl} from './../constantsLink.js';
+
 export default function homeProgrammer() {
   return (
     <Box
@@ -40,7 +43,7 @@ export default function homeProgrammer() {
               cssModule={AwesomeButtonStyles}
               type="primary"
               style={{ margin: '12px', width: "100%", height:"195px"}}
-              href="https://nyutandoncssa.com/#/">
+              href={`${tandonCSSAUrl}`}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <FaComputer size={25} />
                 <h6 style={{ margin: 0 }}>NYU Tandon CSSA Official Website</h6>
@@ -50,7 +53,7 @@ export default function homeProgrammer() {
               cssModule={AwesomeButtonC137Styles}
               type="secondary"
               style={{ margin: '12px', width: "100%", height:"110px"}}
-              href="https://github.com/biubiubiupiu21">
+              href={`${githubUrl}`}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <FaGithub size={25} />
                 <h6 style={{ margin: 0 }}>More @ Github</h6>

@@ -16,9 +16,12 @@ import PhotographerContent from '../components/homeCreator.js'
 
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
+import { faYoutube, faInstagram, faLinkedinIn, faGithub} from "@fortawesome/free-brands-svg-icons"
 
+// profileImage
 import profileImage from '../image/profileImage1.png'
+
+import {githubUrl, youtubeUrl, insUrl, linkedInUrl} from './../constantsLink.js';
 
 
 const ResponsiveText = styled.p`
@@ -62,14 +65,17 @@ function Home() {
               className="profileImage"
               />
               <div className="text-center icon-list">
-                <a className="socialMLog linkHover3" href='https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ' target={'_blank'} rel="noreferrer">
+                <a className="socialMLog linkHover3" href={`${youtubeUrl}`} target={'_blank'} rel="noreferrer">
                   <FontAwesomeIcon icon={ faYoutube } className="socialMLogo fa-xl icon"/>
                 </a>
-                <a className="socialMLog linkHover3" href='https://www.instagram.com/yjytimmm_21?igsh=cmh2MjlxcTNuMmY0&utm_source=qr' target={'_blank'} rel="noreferrer">
+                <a className="socialMLog linkHover3" href={`${insUrl}`} target={'_blank'} rel="noreferrer">
                   <FontAwesomeIcon icon={ faInstagram } className="socialMLogo fa-xl icon"/>
                 </a>
-                <a className="socialMLog linkHover3" href='https://www.linkedin.com/in/junyuyao-tim/' target={'_blank'} rel="noreferrer">
+                <a className="socialMLog linkHover3" href={`${linkedInUrl}`} target={'_blank'} rel="noreferrer">
                   <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo fa-xl icon"/>  
+                </a>
+                <a className="socialMLog linkHover3" href={`${githubUrl}`} target={'_blank'} rel="noreferrer">
+                  <FontAwesomeIcon icon={ faGithub } className="socialMLogo fa-xl icon"/>  
                 </a>
               </div>
             </Col>
@@ -77,7 +83,7 @@ function Home() {
               <p className="text-left" style={{ lineHeight: 2 }}>
                 I am Junyu (Tim) Yao, a computer engineer with a Master's from NYU Tandon School of Engineering and a Bachelor's from Washington College. <br></br> <br></br>
                 My academic and professional journey is rooted in leveraging technology to create impactful solutions. 
-                I specialize in machine learning, network security, and full-stack development, with proficiency in <u>Python</u>, <u>Java</u>, <u>JavaScript</u>, <u>React</u>, <u>SQL</u>, and more <a href='https://github.com/biubiubiupiu21' target={'_blank'} rel="noreferrer">@My Github Page</a> <br></br> <br></br>
+                I specialize in machine learning, network security, and full-stack development, with proficiency in <u>Python</u>, <u>Java</u>, <u>JavaScript</u>, <u>React</u>, <u>SQL</u>, and more <a href={`${githubUrl}`} target={'_blank'} rel="noreferrer">@My Github Page</a> <br></br> <br></br>
                 With experience in web development and project leadership, I'm passionate about driving innovation in the digital space. This website is a window into my projects, experiences, and thoughts on how technology shapes our world.<br></br>
                 Let's connect and explore opportunities for collaboration.
               </p>
