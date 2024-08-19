@@ -8,12 +8,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //MUI
 import Container from '@mui/material/Container';
 
-import Header from '../components/Header.js'
 import FixedIcon from '../components/fixedIcon.js'
 import Programmer_Content from '../components/homeProgrammer.js'
 // import Photographer_Content from '../components/imageList'
 import Photographer_Content from '../components/homeCreator.js'
-import Footer from '../components/footer.js'
 
 
 // brand icon with fontawesome

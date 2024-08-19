@@ -1,14 +1,13 @@
 // Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Row, Col, Container, Nav, NavDropdown} from 'react-bootstrap';
+import {Row, Col, Container} from 'react-bootstrap';
 // css
 import './css/headerFooter.css';
 import '../css/style.css';
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
-//  profileimage and thw logo image
-import logoImage from '../image/logoImage.png'
+
 
 const emailAddress = 'yjy197@outlook.com';
 

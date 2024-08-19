@@ -8,13 +8,11 @@ import '../css/style.css';
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faGithub} from "@fortawesome/free-brands-svg-icons"
-import { faCircleChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { AiOutlineBilibili } from "react-icons/ai";
 //  profileimage and thw logo image
 import logoImage from '../image/logoImage.png'
-import React, { useEffect, useState, useLayoutEffect, useRef} from 'react'
+import React, { useState} from 'react'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
-import { Typography } from '@mui/material';
 
 function BasicExample() {
     const [hideOnScroll, setHideOnScroll] = useState(false)
@@ -27,7 +25,7 @@ function BasicExample() {
     
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
-const emailAddress = 'yjy197@outlook.com';
+// const emailAddress = 'yjy197@outlook.com';
 
 return (
     <Navbar className={`backgroundcolor1 PoppinsFont nav  ${hideOnScroll && 'navhide'}`}  variant="dark" fixed="top" expand="lg">
