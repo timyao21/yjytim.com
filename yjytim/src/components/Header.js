@@ -18,14 +18,18 @@ function BasicExample() {
     const [hideOnScroll, setHideOnScroll] = useState(false)
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
+    // Scroll up and down get the the postion alive
     useScrollPosition(({ prevPos, currPos }) => {
-        const isShow = currPos.y < prevPos.y
+        let isShow = currPos.y < prevPos.y;
+        if (currPos.y === 0){
+            isShow = false
+        }
         if (isShow !== hideOnScroll) setHideOnScroll(isShow)
       }, [hideOnScroll])
     
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
-// const emailAddress = 'yjy197@outlook.com';
+const emailAddress = 'yjy197@outlook.com';
 
 return (
     <Navbar className={`backgroundcolor1 PoppinsFont nav  ${hideOnScroll && 'navhide'}`}  variant="dark" fixed="top" expand="lg">
@@ -66,7 +70,7 @@ return (
 
                                 <NavDropdown.Divider/>
 
-                                <NavDropdown.Item href={'mailto:yjy197@outlook.com'}>
+                                <NavDropdown.Item href={`mailto:${emailAddress}`}>
                                     Contact me
                                 </NavDropdown.Item>
 
