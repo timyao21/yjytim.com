@@ -9,9 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from '@mui/material/Container';
 
 import FixedIcon from '../components/fixedIcon.js'
-import Programmer_Content from '../components/homeProgrammer.js'
-// import Photographer_Content from '../components/imageList'
-import Photographer_Content from '../components/homeCreator.js'
+import ProgrammerContent from '../components/homeProgrammer.js'
+import PhotographerContent from '../components/homeCreator.js'
 
 
 // brand icon with fontawesome
@@ -60,7 +59,7 @@ function Home() {
               <p className="text-left" style={{ lineHeight: 2 }}>
                 I am Junyu (Tim) Yao, a computer engineer with a Master's from NYU Tandon School of Engineering and a Bachelor's from Washington College. <br></br> <br></br>
                 My academic and professional journey is rooted in leveraging technology to create impactful solutions. 
-                I specialize in machine learning, network security, and full-stack development, with proficiency in <u>Python</u>, <u>Java</u>, <u>JavaScript</u>, <u>React</u>, <u>SQL</u>, and more <a href='https://github.com/biubiubiupiu21' target={'_blank'}>@My Github Page</a> <br></br> <br></br>
+                I specialize in machine learning, network security, and full-stack development, with proficiency in <u>Python</u>, <u>Java</u>, <u>JavaScript</u>, <u>React</u>, <u>SQL</u>, and more <a href='https://github.com/biubiubiupiu21' target={'_blank'} rel="noreferrer">@My Github Page</a> <br></br> <br></br>
                 With experience in web development and project leadership, I'm passionate about driving innovation in the digital space. This website is a window into my projects, experiences, and thoughts on how technology shapes our world.<br></br>
                 Let's connect and explore opportunities for collaboration.
               </p>
@@ -73,7 +72,7 @@ function Home() {
         <Container maxWidth="md">
           <h2 className="text-center programmerTitle">A "Rookie" Programmer</h2>
           <p className="text-center ">Always Exploring</p>
-          <Programmer_Content/>
+          <ProgrammerContent/>
         </Container>
       </div>
 
@@ -81,7 +80,7 @@ function Home() {
         <Container maxWidth="lg">
             <h2 className="text-center creatorTitle">A "Rookie" Content Creator</h2>
             <div style={{padding: "10%"}}>
-              <Photographer_Content/>
+              <PhotographerContent/>
             </div>
         </Container>
       </div>    
