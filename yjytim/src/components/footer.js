@@ -6,10 +6,10 @@ import './css/headerFooter.css';
 import '../css/style.css';
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
+import { faYoutube, faInstagram, faLinkedinIn, faGithub} from "@fortawesome/free-brands-svg-icons"
+// import all the email link
+import {emailAddress, youtubeUrl, insUrl, linkedInUrl, githubUrl} from './../constantsLink.js';
 
-
-const emailAddress = 'yjy197@outlook.com';
 
 function Footer() {
   return (
@@ -29,15 +29,18 @@ function Footer() {
                 </Col>
                 <Col xs={6} md={{ span: 4,order: 'last',}}>
                     <div>
-                        <a className="socialMLog linkHover" href='https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ' target={'_blank'} rel="noreferrer">
+                        <a className="socialMLog linkHover" href={`${youtubeUrl}`} target={'_blank'} rel="noreferrer">
                             <FontAwesomeIcon icon={ faYoutube } className="socialMLogo footerIcon fa-xl"/>
                         </a>
-                        <a className="socialMLog linkHover" href='https://www.instagram.com/yjytimmm_21?igsh=cmh2MjlxcTNuMmY0&utm_source=qr' target={'_blank'} rel="noreferrer">
+                        <a className="socialMLog linkHover" href={`${insUrl}`} target={'_blank'} rel="noreferrer">
                             <FontAwesomeIcon icon={ faInstagram } className="socialMLogo footerIcon fa-xl"/>
                         </a>
-                        <a className="socialMLog linkHover" href='https://www.linkedin.com/in/junyuyao-tim/' target={'_blank'} rel="noreferrer">
+                        <a className="socialMLog linkHover" href={`${linkedInUrl}`} target={'_blank'} rel="noreferrer">
                             <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLogo footerIcon fa-xl"/>   
-                        </a>                 
+                        </a>   
+                        <a className="socialMLog linkHover" href={`${githubUrl}`} target={'_blank'} rel="noreferrer">
+                            <FontAwesomeIcon icon={ faGithub } className="socialMLogo footerIcon fa-xl"/>   
+                        </a>               
                     </div>
 
                 </Col>

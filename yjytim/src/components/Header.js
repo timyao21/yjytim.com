@@ -2,17 +2,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
+
 // css
 import './css/headerFooter.css';
 import '../css/style.css';
+
 // brand icon with fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faGithub} from "@fortawesome/free-brands-svg-icons"
 import { AiOutlineBilibili } from "react-icons/ai";
+
 //  profileimage and thw logo image
 import logoImage from '../image/logoImage.png'
 import React, { useState} from 'react'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
+
+import {emailAddress, githubUrl, youtubeUrl, insUrl, insPhotoUrl, bilibiliUrl} from './../constantsLink.js';
 
 function BasicExample() {
     const [hideOnScroll, setHideOnScroll] = useState(false)
@@ -29,8 +34,6 @@ function BasicExample() {
     
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
-const emailAddress = 'yjy197@outlook.com';
-
 return (
     <Navbar className={`backgroundcolor1 PoppinsFont nav  ${hideOnScroll && 'navhide'}`}  variant="dark" fixed="top" expand="lg">
         <Container>
@@ -46,25 +49,25 @@ return (
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto" style={{paddingRight:"10%"}}>
                         <Nav.Link className='navbarButton textColor1 me-auto' style={{paddingLeft:"12px"}} href="/">Home</Nav.Link>
-                        <Nav.Link className='navbarButton textColor1 me-auto' style={{paddingLeft:"12px"}} href="https://github.com/biubiubiupiu21" target="_blank">Work</Nav.Link>
+                        <Nav.Link className='navbarButton textColor1 me-auto' style={{paddingLeft:"12px"}} href={`${githubUrl}`} target="_blank">Projects</Nav.Link>
                         <Dropdown>
                             <Dropdown.Toggle id="dropdown-basic" className='btn-dark backgroundcolor1 textColor1 mx-auto' style={{ outline: "none", boxShadow: 'none'}}>
                                 More
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <NavDropdown.Item href="https://www.instagram.com/yjytim.jpg?igsh=cGZnZnBpZGIwY2xl&utm_source=qr" target="_blank">
+                                <NavDropdown.Item href={`${githubUrl}`} target="_blank">
                                     <FontAwesomeIcon icon={ faGithub } className="socialMLogo"/> Github
                                 </NavDropdown.Item>  
-                                <NavDropdown.Item href="https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ" target="_blank">
+                                <NavDropdown.Item href={`${youtubeUrl}`} target="_blank">
                                     <FontAwesomeIcon icon={ faYoutube } className="socialMLogo"/> YouTube
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="https://space.bilibili.com/626701417?spm_id_from=333.1007.0.0" target="_blank">
+                                <NavDropdown.Item href={`${bilibiliUrl}`} target="_blank">
                                     <AiOutlineBilibili /> Bilibili
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="https://www.instagram.com/yjytimmm_21?igsh=cmh2MjlxcTNuMmY0&utm_source=qr" target="_blank">
+                                <NavDropdown.Item href={`${insUrl}`} target="_blank">
                                     <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/> Instagram
                                 </NavDropdown.Item>
-                                <NavDropdown.Item href="https://www.instagram.com/yjytim.jpg?igsh=cGZnZnBpZGIwY2xl&utm_source=qr" target="_blank">
+                                <NavDropdown.Item href={`${insPhotoUrl}`} target="_blank">
                                     <FontAwesomeIcon icon={ faInstagram } className="socialMLogo"/> Photography
                                 </NavDropdown.Item>             
 

@@ -9,6 +9,9 @@ import './css/fixedIcon.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
 
+//import links
+import {youtubeUrl, insUrl, linkedInUrl} from './../constantsLink.js';
+
 function fixedIcon() {
   return (
     <div className="text-center">  
@@ -18,13 +21,13 @@ function fixedIcon() {
                 <div>
                     <div class="vr text-center verticalRule textColor4"></div>
                 </div>                
-                <a className="socialMLog textColor4" href='https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ' target={'_blank'} rel="noreferrer">
+                <a className="socialMLog textColor4" href={`${youtubeUrl}`} target={'_blank'} rel="noreferrer">
                     <FontAwesomeIcon icon={ faYoutube } className="socialMLog textColor4"/>
                 </a>
-                <a className="socialMLog textColor4" href='https://www.instagram.com/yjytimmm_21/?next=%2F' target={'_blank'} rel="noreferrer">
+                <a className="socialMLog textColor4" href={`${insUrl}`} target={'_blank'} rel="noreferrer">
                     <FontAwesomeIcon icon={ faInstagram } className="socialMLog textColor4"/>
                 </a>
-                <a className="socialMLog textColor4" href='https://www.linkedin.com/in/junyuyao-tim/' target={'_blank'} rel="noreferrer">
+                <a className="socialMLog textColor4" href={`${linkedInUrl}`} target={'_blank'} rel="noreferrer">
                     <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLog textColor4"/>
                 </a>
                 <div>
@@ -35,13 +38,13 @@ function fixedIcon() {
                 <div>
                     <div class="vr text-center verticalRule textColor4"></div>
                 </div>
-                <a className="socialMLog textColor4" href='https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ' target={'_blank'} rel="noreferrer">
+                <a className="socialMLog textColor4" href={`${youtubeUrl}`} target={'_blank'} rel="noreferrer">
                     <FontAwesomeIcon icon={ faYoutube } className="socialMLog textColor4"/>
                 </a>
-                <a className="socialMLog textColor4" href='https://www.instagram.com/yjytimmm_21/?next=%2F' target={'_blank'} rel="noreferrer">
+                <a className="socialMLog textColor4" href={`${insUrl}`} target={'_blank'} rel="noreferrer">
                     <FontAwesomeIcon icon={ faInstagram } className="socialMLog textColor4"/>
                 </a>
-                <a className="socialMLog textColor4" href='https://www.linkedin.com/in/junyuyao-tim/' target={'_blank'} rel="noreferrer">
+                <a className="socialMLog textColor4" href={`${linkedInUrl}`} target={'_blank'} rel="noreferrer">
                     <FontAwesomeIcon icon={ faLinkedinIn } className="socialMLog textColor4"/>
                 </a>
                 <div>

@@ -16,6 +16,8 @@ import profileImage from '../image/profileImage1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faInstagram} from "@fortawesome/free-brands-svg-icons"
 
+import {youtubeUrl, insPhotoUrl} from './../constantsLink.js';
+
 
 export default function homeCreator() {
   return (
@@ -70,7 +72,7 @@ export default function homeCreator() {
                     <FontAwesomeIcon icon={ faInstagram } className="socialMLogo fa-xl icon" style={{color: "#ff2600",}}/>
                     <Typography level="h2" noWrap sx={{ fontSize: 'lg' }}>
                         <Link
-                        href="https://instagram.com/yjytimmm_21?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+                        href={`${insPhotoUrl}`}
                         overlay
                         underline="none"
                         target="_blank"
@@ -159,7 +161,7 @@ export default function homeCreator() {
                         <FontAwesomeIcon icon={ faYoutube } className="socialMLogo fa-xl icon" style={{color: "#ff2600",}}/>
                         <Typography level="h2" noWrap sx={{ fontSize: 'lg' }}>
                             <Link
-                            href="https://www.youtube.com/channel/UC9kCc8BtgMi9NnovEoh5PzQ"
+                            href={`${youtubeUrl}`}
                             overlay
                             underline="none"
                             target="_blank"
